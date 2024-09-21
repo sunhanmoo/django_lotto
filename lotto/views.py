@@ -7,7 +7,7 @@ from django.shortcuts import render, redirect
 # Create your views here.
 def index(request):
     lottos = GuessNumbers.objects.all()
-    return render(request, 'lotto/default.html', {'lottos':lottos})
+    return render(request, 'lotto/detail.html', {'lottos':lottos})
 
 
 def post(request):
